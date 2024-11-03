@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         sans: ["Raleway", "sans-serif"],
       },
+      colors: {
+        menuYellow: "#F1E3A9", // Color for menus on hover
+      },
     },
   },
   plugins: [],

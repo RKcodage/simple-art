@@ -1,6 +1,7 @@
 import './App.css'
 import { useState } from 'react';
-import logo from './assets/ASwhite.png';
+import Contact from './components/Contact';
+// import logo from './assets/ASwhite.png';
 
 function App() {
 
@@ -26,16 +27,19 @@ function App() {
         }}>
           <div className="w-full p-6">
             <nav className="text-white flex justify-between">
-              <p className="text-xl">Art by S. R</p>
-              <ul className="flex gap-8 text-lg">
-                <li className="cursor-pointer">Création</li>
-                <li className="cursor-pointer">Artiste</li>
-                <li className="cursor-pointer">Contact</li>
+              <p className="text-xl font-semibold">Art by S. R</p>
+              <ul className="flex gap-10 text-lg">
+                <li className="cursor-pointer hover:font-semibold hover:text-menuYellow hvr-underline-from-left">Création</li>
+                <li className="cursor-pointer hover:font-semibold  hover:text-menuYellow hvr-underline-from-left">Artiste</li>
+                <li className="cursor-pointer hover:font-semibold  hover:text-menuYellow hvr-underline-from-left">
+                  <a href="#contact">Contact</a>
+                </li>
               </ul>
             </nav>
           </div>
           {/* <img src={logo} className="w-[150px] absolute left-1/2 top-[-25px] transform -translate-x-1/2"/>         */}
         </div>
+        <Contact />
       </div>
     </>
   )
