@@ -23,11 +23,18 @@ function App() {
         <div className="w-full min-h-[100vh] bg-[url('./assets/frequence.jpeg')] bg-cover bg-center bg-no-repeat relative overflow-hidden background-shiny" style={{
             '--shineX': `${shinePosition.x}%`,
             '--shineY': `${shinePosition.y}%`,
-          }}>
-          <nav>
-            {/* Ton contenu de navigation ici */}
-          </nav>
-          <img src={logo} className="w-[150px] absolute left-1/2 top-[-25px] transform -translate-x-1/2"/>        
+        }}>
+          <div className="w-full p-6">
+            <nav className="text-white flex justify-between">
+              <p className="text-xl">Art by S. R</p>
+              <ul className="flex gap-8 text-lg">
+                <li className="cursor-pointer">Création</li>
+                <li className="cursor-pointer">Artiste</li>
+                <li className="cursor-pointer">Contact</li>
+              </ul>
+            </nav>
+          </div>
+          {/* <img src={logo} className="w-[150px] absolute left-1/2 top-[-25px] transform -translate-x-1/2"/>         */}
         </div>
       </div>
     </>
