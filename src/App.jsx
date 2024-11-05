@@ -1,6 +1,6 @@
 import './App.css'
 import { useState } from 'react';
-import Contact from './components/Contact';
+import Contact from './components/Artist';
 // import logo from './assets/ASwhite.png';
 
 function App() {
@@ -25,12 +25,16 @@ function App() {
             '--shineX': `${shinePosition.x}%`,
             '--shineY': `${shinePosition.y}%`,
         }}>
-          <div className="w-full p-6">
+          <div className="w-full p-8">
             <nav className="text-white flex justify-between">
-              <p className="text-xl font-semibold">Art by S. R</p>
-              <ul className="flex gap-10 text-lg">
-                <li className="cursor-pointer hover:font-semibold hover:text-menuYellow hvr-underline-from-left">Création</li>
-                <li className="cursor-pointer hover:font-semibold  hover:text-menuYellow hvr-underline-from-left">Artiste</li>
+
+              <p className="text-2xl font-semibold">Art by S. R</p>
+
+              <ul className="flex gap-10 text-xl">
+                <li className="cursor-pointer hover:font-semibold hover:text-menuYellow hvr-underline-from-left">Créations</li>
+                <li className="cursor-pointer hover:font-semibold  hover:text-menuYellow hvr-underline-from-left">
+                  <a href="#artiste">Artiste</a>
+                </li>
                 <li className="cursor-pointer hover:font-semibold  hover:text-menuYellow hvr-underline-from-left">
                   <a href="#contact">Contact</a>
                 </li>

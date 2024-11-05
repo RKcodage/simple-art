@@ -5,9 +5,10 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Raleway", "sans-serif"],
+        garamond: ["'Cormorant Garamond'", "serif"],
       },
       colors: {
-        menuYellow: "#F1E3A9", // Color for menus on hover
+        menuYellow: "#9f895d", // Color for menus on hover
       },
     },
   },

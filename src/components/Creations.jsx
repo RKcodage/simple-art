@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Creation = () => {
+const Creations = () => {
   return (
     <div className="text-black">
       <h2>Creation</h2>
@@ -8,4 +8,4 @@ const Creation = () => {
   )
 }
 
-export default Creation
+export default Creations
