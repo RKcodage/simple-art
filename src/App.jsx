@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <div className="w-full min-h-[100vh]" onMouseMove={handleMouseMove}>
-        <div className="w-full min-h-[100vh] bg-[url('./assets/frequence.jpeg')] bg-cover bg-center bg-no-repeat relative overflow-hidden background-shiny" style={{
+        <div className="w-full min-h-[100vh] bg-[url('./assets/frequence.jpeg')] bg-cover bg-center bg-fixed bg-no-repeat relative overflow-hidden background-shiny" style={{
             '--shineX': `${shinePosition.x}%`,
             '--shineY': `${shinePosition.y}%`,
         }}>
