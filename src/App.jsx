@@ -1,6 +1,6 @@
 import './App.css'
 import { useState } from 'react';
-import Contact from './components/Artist';
+import Artist from './components/Artist';
 // import logo from './assets/ASwhite.png';
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
           </div>
           {/* <img src={logo} className="w-[150px] absolute left-1/2 top-[-25px] transform -translate-x-1/2"/>         */}
         </div>
-        <Contact />
+        <Artist/>
       </div>
     </>
   )
