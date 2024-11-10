@@ -28,7 +28,7 @@ const Artist = () => {
 
         <div className="w-full md:w-1/2 lg:w-1/3 ml-8">
           <img
-            src="/src/assets/expo1.jpeg"
+            src="/assets/expo1.jpeg"
             className="w-full h-auto rounded-lg shadow-lg"
             alt="Steven Roquet Exposition"
           />
@@ -70,7 +70,7 @@ const Artist = () => {
             className="w-full max-w-sm rounded-lg mt-6"
             ref={videoEl}
             >
-              <source src="src/assets/art.mov"/>
+              <source src="/assets/art.mov"/>
           </video>
         </div>
       </div>
