@@ -7,6 +7,8 @@ html, body {
   padding: 0;
   letter-spacing: 0.05em;
   scroll-behavior: smooth;
+  background: url('./assets/frequence.jpeg') no-repeat center center fixed;
+  background-size: cover;
   @apply font-garamond;
 }
 

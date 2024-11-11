@@ -5,30 +5,14 @@ import Artist from './components/Artist';
 
 function App() {
 
-  const [shinePosition, setShinePosition] = useState({ x: 0, y: 0 });
-
-  const handleMouseMove = (e) => {
-    const { clientX, clientY } = e;
-    const screenWidth = window.innerWidth;
-    const screenHeight = window.innerHeight;
-    
-    // Normalise la position de la souris pour l'appliquer sur l'effet shiny
-    const xPos = (clientX / screenWidth) * 100;
-    const yPos = (clientY / screenHeight) * 100;
-    
-    setShinePosition({ x: xPos, y: yPos });
-  };
   return (
     <>
-      <div className="w-full min-h-[100vh]" onMouseMove={handleMouseMove}>
-        <div className="w-full min-h-[100vh] bg-[url('./assets/frequence.jpeg')] bg-cover bg-center bg-fixed bg-no-repeat relative overflow-hidden background-shiny" style={{
-            '--shineX': `${shinePosition.x}%`,
-            '--shineY': `${shinePosition.y}%`,
-        }}>
-          <div className="w-full p-8">
+      <div className="w-full min-h-[100vh]" id='home'>
+        <div className="w-full min-h-[100vh] relative overflow-hidden">
+          <div className="w-full p-8 fixed top-0 left-0 z-50 bg-black/70">
             <nav className="text-white flex justify-between">
 
-              <p className="text-2xl font-semibold">Art by S. R</p>
+              <a href="#home"><p className="text-2xl font-semibold">Art by S. R</p></a>
 
               <ul className="flex gap-10 text-xl">
                 <li className="cursor-pointer hover:font-semibold hover:text-menuYellow hvr-underline-from-left">Créations</li>
