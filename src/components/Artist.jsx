@@ -49,7 +49,7 @@ const Artist = () => {
     <div className="flex justify-center md:flex-row">
       
         <div className="flex-1 ml-8 mr-8">
-          <h2 className="text-6xl text-menuYellow mb-20 pl-8">L'Art.</h2>
+          <h2 className="text-6xl text-menuYellow mb-20 pl-2">L'Art.</h2>
 
           <p className="px-2 pt-[10px] text-xl text-center text-white">Tout à commencé le 27 septembre 2023, j’avais alors 25 ans et je n’avais toujours pas visité un seul musée de ma vie, oui c’est une honte. Mon premier à été le musée d’Orsay qui est, et restera mon favori. En arrivant dans ce vaste édifice pour la première fois, je vis toutes sortes de merveilles et de chefs d’oeuvre, j’étais sous le choc. En marchant dans les galeries du musée je me posais cette question :</p>
           <p className="px-6 text-xl text-center text-white font-extrabold">“Steven serais-tu capable de faire de l’art ?”</p>
