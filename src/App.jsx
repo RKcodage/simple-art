@@ -56,7 +56,7 @@ function App() {
           >
             <nav className="text-white flex justify-between">
               <a href="#home">
-                <p className="text-2xl font-semibold">Art by S. R</p>
+                <p className="text-3xl font-semibold">Art by S. R</p>
               </a>
 
               <ul className="flex gap-10 text-xl">
