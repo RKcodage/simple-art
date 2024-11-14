@@ -20,7 +20,7 @@ const Artist = () => {
 
   return (
     <>
-    <div className=" bg-black/50 w-full min-h-[100vh] p-8 border-t-[0.5px] border-white pt-6 flex justify-center items-center" id='artiste'>
+    <div className=" bg-black/50 w-full min-h-[100vh] p-8 border-t border-white/50 pt-6 flex justify-center items-center" id='artiste'>
 
       <div className="flex justify-center md:flex-row">
 
@@ -35,7 +35,7 @@ const Artist = () => {
         <div className="flex-1 ml-20">
           <h2 className="text-6xl text-menuYellow mb-20 pl-8">Mon Histoire.</h2>
 
-          <div className="flex flex-col items-center mr-6 text-white ">
+          <div className="flex flex-col items-center text-white ">
             <p className="px-8 pt-[10px] text-xl text-center">Je suis Steven Roquet, un jeune homme de 26 ans cherchant à vivre plusieurs vies dans la même. Accroc au développement de soi, j’essaie de m’améliorer et de devenir meilleur chaque jour. Mon parcours est le résultat d’une suite de rencontres et de choix qui ont façonnés mon identité et mon destin.</p>
             <p className="my-12 text-menuYellow text-lg font-semibold">. . .</p>
             <p className="px-8 pt-[5px] pb-[10px] text-xl text-center">Aujourd’hui, entrepreneur - artiste - sportif, mes journées sont rythmées et chargées, mais rien ne me rend plus heureux. Que ce soit dans la gestion de mes sociétés, de mon club de jiu-		jitsu, peindre, m’entrainer, lire, apprendre ou même organiser de nouveaux projets, chaque journée est un combat que j’aime mener.</p>
@@ -44,7 +44,7 @@ const Artist = () => {
       </div>
     </div>
 
-    <div className="bg-black/50 w-full min-h-[100vh] bg-cover bg-center bg-no-repeat p-8 border-t-[0.5px] border-white pt-6 items-center">
+    <div className="bg-black/50 w-full min-h-[100vh] bg-cover bg-center bg-no-repeat p-8 pt-6 items-center">
 
     <div className="flex justify-center md:flex-row">
       

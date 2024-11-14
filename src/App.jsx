@@ -1,36 +1,82 @@
-import './App.css'
-import { useState } from 'react';
+import './App.css';
+import { useState, useEffect } from 'react';
 import Artist from './components/Artist';
-// import logo from './assets/ASwhite.png';
 
 function App() {
+  const [hideNavbar, setHideNavbar] = useState(false);
+  const [navbarVisible, setNavbarVisible] = useState(true);
+  let visibilityTimeout;
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    const triggerHeight = 0.9 * window.innerHeight;
+
+    // Si on dépasse 80% de la hauteur de la fenêtre, on cache la navbar
+    if (scrollPosition > triggerHeight) {
+      setHideNavbar(true);
+      setNavbarVisible(false);
+    } else {
+      // Si on est en-dessous de 80%, la navbar reste visible
+      setHideNavbar(false);
+      setNavbarVisible(true);
+    }
+  };
+
+  const handleMouseMove = () => {
+    if (hideNavbar) {
+      setNavbarVisible(true);
+
+      // Réinitialiser le timer d'inactivité
+      clearTimeout(visibilityTimeout);
+      visibilityTimeout = setTimeout(() => {
+        setNavbarVisible(false);
+      }, 1000);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('mousemove', handleMouseMove);
+      clearTimeout(visibilityTimeout);
+    };
+  }, [hideNavbar]);
 
   return (
     <>
-      <div className="w-full min-h-[100vh]" id='home'>
+      <div className="w-full min-h-[100vh]" id="home">
         <div className="w-full min-h-[100vh] relative overflow-hidden">
-          <div className="w-full p-8 fixed top-0 left-0 z-50 bg-black/70">
+          <div
+            className={`w-full p-8 fixed top-0 left-0 z-50 transition-all duration-500 ${
+              navbarVisible ? 'translate-y-0' : '-translate-y-full'
+            } ${hideNavbar ? 'bg-black/30 backdrop-blur-sm' : 'bg-transparent'}`}
+          >
             <nav className="text-white flex justify-between">
-
-              <a href="#home"><p className="text-2xl font-semibold">Art by S. R</p></a>
+              <a href="#home">
+                <p className="text-2xl font-semibold">Art by S. R</p>
+              </a>
 
               <ul className="flex gap-10 text-xl">
-                <li className="cursor-pointer hover:font-semibold hover:text-menuYellow hvr-underline-from-left">Créations</li>
-                <li className="cursor-pointer hover:font-semibold  hover:text-menuYellow hvr-underline-from-left">
+                <li className="cursor-pointer hover:font-semibold hover:text-menuYellow hvr-underline-from-left">
+                  Créations
+                </li>
+                <li className="cursor-pointer hover:font-semibold hover:text-menuYellow hvr-underline-from-left">
                   <a href="#artiste">Artiste</a>
                 </li>
-                <li className="cursor-pointer hover:font-semibold  hover:text-menuYellow hvr-underline-from-left">
+                <li className="cursor-pointer hover:font-semibold hover:text-menuYellow hvr-underline-from-left">
                   <a href="#contact">Contact</a>
                 </li>
               </ul>
             </nav>
           </div>
-          {/* <img src={logo} className="w-[150px] absolute left-1/2 top-[-25px] transform -translate-x-1/2"/>         */}
         </div>
-        <Artist/>
+        <Artist />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
