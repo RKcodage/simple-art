@@ -33,7 +33,7 @@ const Artist = () => {
         </div>
 
         <div className="flex-1 ml-20">
-          <h2 className="text-6xl text-menuYellow mb-20 pl-8">Mon Histoire.</h2>
+          <h2 className="text-6xl text-menuYellow mb-20 pl-12">Mon Histoire.</h2>
 
           <div className="flex flex-col items-center text-white ">
             <p className="px-8 pt-[10px] text-xl text-center">Je suis Steven Roquet, un jeune homme de 26 ans cherchant à vivre plusieurs vies dans la même. Accroc au développement de soi, j’essaie de m’améliorer et de devenir meilleur chaque jour. Mon parcours est le résultat d’une suite de rencontres et de choix qui ont façonnés mon identité et mon destin.</p>
@@ -65,6 +65,7 @@ const Artist = () => {
             autoplay 
             playsinline
             loop
+            preload='auto'
             className="w-full max-w-sm rounded-lg mt-6"
             ref={videoEl}
             >

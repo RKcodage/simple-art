@@ -11,12 +11,11 @@ function App() {
     const scrollPosition = window.scrollY;
     const triggerHeight = 0.9 * window.innerHeight;
 
-    // Si on dépasse 80% de la hauteur de la fenêtre, on cache la navbar
+    // Navbar is hidden if scrolling level is higher than 90% of the window height
     if (scrollPosition > triggerHeight) {
       setHideNavbar(true);
       setNavbarVisible(false);
     } else {
-      // Si on est en-dessous de 80%, la navbar reste visible
       setHideNavbar(false);
       setNavbarVisible(true);
     }
@@ -26,7 +25,7 @@ function App() {
     if (hideNavbar) {
       setNavbarVisible(true);
 
-      // Réinitialiser le timer d'inactivité
+      // Reset inactivity timer 
       clearTimeout(visibilityTimeout);
       visibilityTimeout = setTimeout(() => {
         setNavbarVisible(false);
@@ -52,7 +51,7 @@ function App() {
           <div
             className={`w-full p-8 fixed top-0 left-0 z-50 transition-all duration-500 ${
               navbarVisible ? 'translate-y-0' : '-translate-y-full'
-            } ${hideNavbar ? 'bg-black/30 backdrop-blur-sm' : 'bg-transparent'}`}
+            } ${hideNavbar && navbarVisible ? 'bg-gradient-to-b from-black via-black/50 to-transparent' : 'bg-transparent'}`}
           >
             <nav className="text-white flex justify-between">
               <a href="#home">
