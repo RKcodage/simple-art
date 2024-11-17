@@ -69,7 +69,7 @@ const Artist = () => {
             className="w-full max-w-sm rounded-lg mt-6"
             ref={videoEl}
             >
-              <source src="/assets/art.webm"/>
+              <source src="/assets/art2.webm"/>
           </video>
         </div>
       </div>

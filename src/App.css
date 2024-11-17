@@ -47,5 +47,5 @@ html, body {
 }
 
 .icon-bubble {
-  @apply w-20 h-20 flex items-center justify-center rounded-full bg-black shadow-lg my-6 border border-menuYellow backdrop-blur-sm;
+  @apply w-20 h-20 flex items-center justify-center rounded-full bg-black shadow-lg my-6 border border-menuYellow;
 }
