@@ -1,6 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import Artist from './components/Artist';
+import Contact from './components/Contact';
 
 function App() {
   const [hideNavbar, setHideNavbar] = useState(false);
@@ -73,6 +74,7 @@ function App() {
           </div>
         </div>
         <Artist />
+        <Contact />
       </div>
     </>
   );
