@@ -50,7 +50,7 @@ function App() {
       <div className="w-full min-h-[100vh]" id="home">
         <div className="w-full min-h-[100vh] relative overflow-hidden">
           <div
-            className={`w-full p-8 fixed top-0 left-0 z-50 transition-all duration-500 ${
+            className={`w-full px-12 pt-8 fixed top-0 left-0 z-50 transition-all duration-500 ${
               navbarVisible ? 'translate-y-0' : '-translate-y-full'
             } ${hideNavbar && navbarVisible ? 'bg-gradient-to-b from-black via-black/50 to-transparent' : 'bg-transparent'}`}
           >
