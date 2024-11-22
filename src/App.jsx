@@ -2,6 +2,7 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import Artist from './components/Artist';
 import Contact from './components/Contact';
+import Creations from './components/Creations';
 
 function App() {
   const [hideNavbar, setHideNavbar] = useState(false);
@@ -61,7 +62,7 @@ function App() {
 
               <ul className="flex gap-10 text-xl">
                 <li className="cursor-pointer hover:font-semibold hover:text-menuYellow hvr-underline-from-left">
-                  Créations
+                  <a href="#creations">Créations</a>
                 </li>
                 <li className="cursor-pointer hover:font-semibold hover:text-menuYellow hvr-underline-from-left">
                   <a href="#artiste">Artiste</a>
@@ -74,6 +75,7 @@ function App() {
           </div>
         </div>
         <Artist />
+        <Creations />
         <Contact />
       </div>
     </>

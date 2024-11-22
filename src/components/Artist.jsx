@@ -20,7 +20,7 @@ const Artist = () => {
 
   return (
     <>
-    <div className=" bg-black/50 w-full min-h-[100vh] p-8 border-t border-white/50 pt-6 flex justify-center items-center" id='artiste'>
+    <div className=" bg-black/60 w-full min-h-[100vh] p-8 border-t border-white/50 pt-6 flex justify-center items-center" id='artiste'>
 
       <div className="flex justify-center md:flex-row px-4">
 
@@ -44,7 +44,7 @@ const Artist = () => {
       </div>
     </div>
 
-    <div className="bg-black/50 w-full min-h-[100vh] bg-cover bg-center bg-no-repeat px-12 pt-6 items-center">
+    <div className="bg-black/60 w-full min-h-[100vh] bg-cover bg-center bg-no-repeat px-12 pt-6 items-center border-b border-white/50">
 
     <div className="flex justify-center md:flex-row">
       
@@ -54,9 +54,9 @@ const Artist = () => {
           <p className="px-2 pt-[10px] text-xl text-center text-white">Tout à commencé le 27 septembre 2023, j’avais alors 25 ans et je n’avais toujours pas visité un seul musée de ma vie, oui c’est une honte. Mon premier à été le musée d’Orsay qui est, et restera mon favori. En arrivant dans ce vaste édifice pour la première fois, je vis toutes sortes de merveilles et de chefs d’oeuvre, j’étais sous le choc. En marchant dans les galeries du musée je me posais cette question :</p>
           <p className="px-6 text-xl text-center text-white font-extrabold">“Steven serais-tu capable de faire de l’art ?”</p>
           <p className="px-6 pt-[10px] text-xl text-center text-white">En me comparant à ce que je voyais à coté, le courage m’avait abandonné en me disant que cette idée n’avait pas lieu d’être sans aucun talent.</p>
-          <p className="px-6 py-6 text-lg text-center text-menuYellow font-semibold">. . .</p>
+          <p className="px-6 py-4 text-lg text-center text-menuYellow font-semibold">. . .</p>
           <p className="px-6 pt-[5px] text-xl text-center text-white">Le 8 octobre 2023, visite du Centre Georges Pompidou. Ce n’était pas parce que l’idée de faire de l’art m’avait quittée que j’allais renoncer à découvrir les musées de Paris. En admirant à chaque étages du centre  des oeuvres de plus en plus abstraites sur les murs. Je me suis rendu compte que l’art était partout, qu’il suffisait de le voir et de le capturer. À partir de cet instant la même question reprenait place dans mon esprit :</p>
-          <p className="px-6 py-6 text-lg text-center text-menuYellow font-semibold">. . .</p>
+          <p className="px-6 py-4 text-lg text-center text-menuYellow font-extrabold">. . .</p>
           <p className="px-6 pt-[5px] text-xl text-center text-white font-extrabold">Le 14 octobre 2023, ma Première toile, et le début d’une grande histoire.</p>
         </div>
         <div className="w-full md:w-1/2 lg:w-1/4 pl-12 pt-8">
