@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className="w-full flex justify-center bg-black/60 py-8 gap-36" id='contact'>
+    <div className="w-full flex justify-center bg-black/60 py-12 gap-36" id='contact'>
       <div className="w-full md:w-1/2 lg:w-1/3">
         <img src="/assets/drawn33.jpg" className="w-3/4 h-auto rounded-lg shadow-lg"/>
       </div>
