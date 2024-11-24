@@ -4,7 +4,7 @@ const Creations = () => {
   return (
     <div className="bg-black/60 w-full min-h-[100vh] bg-cover bg-center bg-no-repeat px-12 items-center border-b border-white/50" id='creations'>
 
-      <div className="flex justify-center md:flex-row px-4 pt-[80px]">
+      <div className="flex justify-center md:flex-row pt-[80px]">
 
         <div className="w-full md:w-1/2 lg:w-1/3">
           <img
@@ -29,7 +29,7 @@ const Creations = () => {
         </div>
       </div>
 
-      <div className="flex justify-center md:flex-row px-4 pt-[80px] pb-8">
+      <div className="flex justify-center md:flex-row pt-[80px] pb-8">
 
       <div className="flex-1 mr-20">
           <h2 className="text-6xl text-menuYellow mb-12 pl-2">Collection Première.</h2>
@@ -55,7 +55,7 @@ const Creations = () => {
         </div>
       </div>
 
-      <div className="flex justify-center md:flex-row px-4 pt-[80px] pb-8">
+      <div className="flex justify-center md:flex-row pt-[80px] pb-8">
 
         {/* // Image */}
         <div className="w-full md:w-1/2 lg:w-1/3">
@@ -77,7 +77,7 @@ const Creations = () => {
             </div>
         </div>
       </div>
-      <div className="flex justify-center md:flex-row px-4 pt-[80px] pb-[80px]">
+      <div className="flex justify-center md:flex-row pt-[80px] pb-[80px]">
 
       <div className="flex-1 mr-20">
           <h2 className="text-6xl text-menuYellow mb-20 pl-2">Collection Abstraite.</h2>
