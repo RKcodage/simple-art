@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Artist from './components/Artist';
 import Contact from './components/Contact';
 import Creations from './components/Creations';
+import Footer from './components/Footer';
 
 function App() {
   const [hideNavbar, setHideNavbar] = useState(false);
@@ -77,6 +78,7 @@ function App() {
         <Artist />
         <Creations />
         <Contact />
+        <Footer />
       </div>
     </>
   );
